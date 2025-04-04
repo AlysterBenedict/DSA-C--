@@ -1,6 +1,6 @@
 #include<iostream>
 using namespace std;
-
+//sum of odd numbers from 1 to n
 int main()
 {
     int n,sum=0;

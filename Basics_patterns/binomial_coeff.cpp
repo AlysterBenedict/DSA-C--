@@ -19,7 +19,7 @@ int binomial(int n,int r)
     int diff;
     diff=fact(n-r);
 
-    return (no/(ro*(diff)));
+    return (no/(ro*(diff)));    //nCr=n!/()
 }
 
 int main()

@@ -1,6 +1,6 @@
 //  Brute force 
 
-
+//MAXIMUM SUBARRAY SUM
 #include<iostream>
 #include <climits>
 using namespace std;

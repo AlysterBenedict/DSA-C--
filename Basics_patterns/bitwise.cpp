@@ -1,14 +1,27 @@
-#include<iostream>
+#include <iostream>
 using namespace std;
+
 int main()
 {
-    int a=8,b=4;
-    //left shift is the : multiply
-    cout<<(6&10);
+    int a = 8, b = 4; // Declaration of variables for demonstration
 
-    //right shift is the : divide 
-    cout<<endl;
-    cout<<(4>>1);
+    // Demonstration of Left Shift (Multiplication equivalent)
+    cout << "Left Shift (Multiplication): ";
+    cout << (a << 3); // Equivalent to a * 8
+    cout << endl;
 
-    cout<<"\n"<<sizeof(int);
+    // Demonstration of Right Shift (Division equivalent)
+    cout << "Right Shift (Division): ";
+    cout << (b >> 2); // Equivalent to b / 4
+    cout << endl;
+
+    // Example of Using Both Operations Together
+    cout << "Example Using Both Operations: ";
+    int result = a << 3; // Multiply by 8
+    result = result >> 2; // Divide by 4
+    cout << result << endl;
+
+    // Standard Size Output
+    cout << "Size of int: " << sizeof(int) << endl;
+    return 0;
 }

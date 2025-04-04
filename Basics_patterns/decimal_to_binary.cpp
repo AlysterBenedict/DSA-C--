@@ -23,10 +23,11 @@ int bintodec(int bin)
     int sum1=0;
     int pow=1;
     while(bin>0){
+
     rem=bin%10;
-    
-    sum1+=rem*pow;
     bin/=10;
+    sum1+=rem*pow;
+    
     pow*=2;
     }
     return sum1;
