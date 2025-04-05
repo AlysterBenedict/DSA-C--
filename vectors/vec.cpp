@@ -9,7 +9,7 @@ using namespace std;
 int main()
 {
 
-    //vector is stored as a dynamuic array in the heap memory
+    //vector is stored as a dynamic array in the heap memory
     //when a vector is created, it is created with a default size of 0
     //when we add elements to the vector, it is resized to fit the new elements
     //when we remove elements from the vector, it is resized to fit the new elements
