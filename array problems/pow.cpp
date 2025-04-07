@@ -8,6 +8,27 @@ double powern(double x, int n)
 
     // Binary exponentiation: loop runs O(log n) times         [  n=log2(n)+1   ] 1000= 10 bits , 11 iterations
     // because each right shift removes one bit from binaryform
+
+    if(binaryform<0)
+    {
+        binaryform=-binaryform;
+        x=1/x; // If n is negative, take the reciprocal of x
+    // This is equivalent to x^(-n) = 1/(x^n)
+    }
+if(n==0)
+return 1.0;
+if(x==0)
+return 0.0;
+if(x==1)
+return 1.0;;
+if(n==1)
+return x;
+
+if(x==-1 && n&2==0)
+return 1.0;
+if(x==-1 && n&2==1)
+return -1.0;
+
     while (binaryform > 0)
     {
         // If the least significant bit is 1, multiply ans by current x
