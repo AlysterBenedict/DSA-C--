@@ -23,8 +23,17 @@ class Solution {
     };
 int main()
 {
+    int n;
+    cout<<"Enter the number of elements in the array : ";
+    cin>>n;
+    cout<<"Enter the elements of the array : ";
+    vector<int> nums(n);
+    for(int i=0;i<n;i++)
+    {
+        cin>>nums[i];
+    }
     Solution sol;
-    vector<int> nums = {1, 2, 3, 4};
+    
     vector<int> products = sol.productExceptSelf(nums);
     
     cout << "The product of all elements except the current element is: ";
