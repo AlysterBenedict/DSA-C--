@@ -20,12 +20,21 @@ void inputArray(std::vector<int>& arr) {
 
 void bubbleSort(vector<int>& arr) {
     int n = arr.size();
+    
+
     for (int i = 0; i < n - 1; i++) {
+
+        bool isSwap=false;
+
+
         for (int j = 0; j < n - i - 1; j++) {
             if (arr[j] > arr[j + 1]) {
-                swap(arr[j], arr[j + 1]); // Swap elements if they are in the wrong order
+                swap(arr[j], arr[j + 1]);
+                isSwap=true; // Swap elements if they are in the wrong order
             }
         }
+        if(isSwap==false)   //Optimised Bubble sort(skip if the array is already sorted)
+        return;  
     }
 }
 
