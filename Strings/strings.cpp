@@ -1,16 +1,15 @@
 #include <iostream>
-#include <string>  // Use <string> instead of <string.h>
+#include <string>  //Modern C++ string usage
 using namespace std;
 
 int main() {
-    // Declare all variables at the top to avoid redeclaration
     string str = "Alyster Benedict";
     string str2 = "ster";
     string str3;  // Only declare once
 
-    // Get input for str3 first to avoid confusion
+    
     cout << "Enter a string: ";
-    getline(cin, str3);
+    getline(cin, str3);            //different from cin.getline() used for char arrays
     cout << "You entered: " << str3 << endl;
 
     // Demonstrate string operations
