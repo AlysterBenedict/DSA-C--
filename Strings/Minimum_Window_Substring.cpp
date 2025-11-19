@@ -72,3 +72,21 @@ public:
         }
     }
 };
+
+int main() {
+    Solution sol;
+
+    string s1 = "ADOBECODEBANC";
+    string t1 = "ABC";
+    cout << "S: \"" << s1 << "\", T: \"" << t1 << "\" -> Min Window: \"" << sol.minWindow(s1, t1) << "\"" << endl; // Expected: "BANC"
+
+    string s2 = "a";
+    string t2 = "a";
+    cout << "S: \"" << s2 << "\", T: \"" << t2 << "\" -> Min Window: \"" << sol.minWindow(s2, t2) << "\"" << endl; // Expected: "a"
+
+    string s3 = "a";
+    string t3 = "aa";
+    cout << "S: \"" << s3 << "\", T: \"" << t3 << "\" -> Min Window: \"" << sol.minWindow(s3, t3) << "\"" << endl; // Expected: ""
+
+    return 0;
+}
