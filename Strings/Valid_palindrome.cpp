@@ -1,6 +1,8 @@
 //https://leetcode.com/problems/valid-palindrome/description/
 
-#include<bits/stdc++.h>
+#include <iostream>
+#include <string>
+#include <cctype>
 using namespace std;
 
 bool isPalindrome(string s)
@@ -16,7 +18,7 @@ bool isPalindrome(string s)
         while(left<right && !isalnum(s[right]))
         right--;
 
-        if(tolower(s[left] != tolower(s[right])))
+        if(tolower(s[left]) != tolower(s[right]))
         return false;
 
         left++;
